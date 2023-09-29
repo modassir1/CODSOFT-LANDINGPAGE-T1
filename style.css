@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #f4e8dc;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    /* color: inherit; */
+    color: #606060;
+}
+
+.navbar_menu a:hover {
+    color: #106e33;
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.wrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_menu_wrapper {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 160px;
+}
+
+.navbar_menu {
+    display: flex;
+    gap: 92.14px;
+    align-items: center;
+}
+
+.navbar_menu_small_device {
+    display: none;
+}
+
+.active {
+    color: black;
+}
+
+.navbar_auth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.sign-in {
+    background: black;
+    color: white;
+    padding: 5px 22px;
+    border-radius: 20px;
+}
+
+
+/* Hero */
+.hero {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100% - 117px);
+}
+
+.snippet {
+    color: #9c9c9c;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 80px;
+    width: 690px;
+    margin-bottom: 15px;
+}
+
+.summer {
+    color: #106e33;
+}
+
+.description {
+    width: 690px;
+    font-size: 20px;
+    color: #5b5b5b;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #106e33;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 14px 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.social-media {
+    display: flex;
+    width: 172px;
+    justify-content: space-around;
+}
+
+.social-media a {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    position: absolute;
+    right : 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: blur(20px);
+}
+
+
+/* media query */
+@media screen and (max-width:1439px ){
+   .container{
+    max-width: 65rem;
+   }
+   .title, .description{
+    width : 400px;
+   }
+   .hero{
+    gap : 30px;
+   }
+}
+
+@media screen and (max-width : 1023px) {
+    .wrapper {
+        padding-top: 20px;
+    }
+
+    .navbar_menu_wrapper {
+        font-size: 14px;
+        gap: 50px;
+    }
+
+    .navbar_menu {
+        gap: 45px;
+    }
+
+    .navbar_logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hero {
+        min-height: calc(100% - 67px);
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .container {
+        padding: 0 30px;
+    }
+    .wrapper{
+        margin-top: 30px;
+    }
+    .navbar_menu_wrapper {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .title, .description {
+        width: 100%;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        width: 141.58px;
+        height: 20px;
+    }
+
+    .hero {
+        margin-top: 30px;
+    }
+
+    .hero-img {
+        text-align: right;
+    }
+
+    .navbar_menu_small_device {
+        display: block;
+        font-size: 20px;
+    }
+
+    .navbar_menu_small_device img {
+        width: 40px;
+    }
+
+    .container {
+        width: 880px;
+    }
+
+    .snippet {
+        font-size: 20px;
+    }
+
+    .snippet {
+        font-size: 40px;
+
+    }
+
+    .title {
+        margin-bottom: 30px;
+    }
+
+    .description {
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .btn {
+        width: 500px;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    .social-media {
+        width: 500px;
+    }
+
+    .social-media a {
+        height: 40px;
+    }
+    .background{
+        display : none;
+    }
+
+}
